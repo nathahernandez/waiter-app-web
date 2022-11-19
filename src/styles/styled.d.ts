@@ -60,5 +60,6 @@ declare module "styled-components" {
 				_200: string
 			}
 		}
+		BORDER: string
 	}
 }

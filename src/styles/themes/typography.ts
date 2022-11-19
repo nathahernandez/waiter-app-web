@@ -3,38 +3,38 @@ export const TYPOGRAPH = {
 		LINE_HEIGHT: "120%",
 		WEIGHT: 600,
 		DISPLAY: {
-			SIZE: "56px"
+			SIZE: "3.5rem"
 		},
 		H1: {
-			SIZE: "48px"
+			SIZE: "3rem"
 		},
 		H2: {
-			SIZE: "40px"
+			SIZE: "2.5rem"
 		},
 		H3: {
-			SIZE: "32px"
+			SIZE: "2rem"
 		},
 		H4: {
-			SIZE: "24px"
+			SIZE: "1.5rem"
 		},
 		H5: {
-			SIZE: "20px"
+			SIZE: "1.25rem"
 		},
 		H6: {
-			SIZE: "16px"
+			SIZE: "1rem"
 		}
 	},
 	BODY_TEXT: {
 		LINE_HEIGHT: "150%",
 		WEIGHT: 400,
 		LG: {
-			SIZE: "18px"
+			SIZE: "1.125rem"
 		},
 		MD: {
-			SIZE: "16px"
+			SIZE: "1rem"
 		},
 		SM: {
-			SIZE: "14px"
+			SIZE: "0.875rem"
 		}
 	}
 };

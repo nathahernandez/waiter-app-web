@@ -20,4 +20,5 @@ export const LIGHT = {
 			_200: "#F2F2F2"
 		}
 	},
+	BORDER: "1px solid rgba(204, 204, 204, 0.4)"
 };
