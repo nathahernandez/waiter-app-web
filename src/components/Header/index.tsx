@@ -1,20 +1,20 @@
 import Logo from "../../assets/images/logo.svg";
-import { Container, Box, TitleHeader, TextHeader } from "./styles";
+import { Container, TitleHeader, TextHeader, Content } from "./styles";
 
 export default function Header () {
 	return (
 		<Container>
-			<Box>
-				<TitleHeader>
-					Pedidos
-				</TitleHeader>
-				<TextHeader>
-					Acompanhe os pedidos dos Clientes
-				</TextHeader>
-			</Box>
-			<Box>
+			<Content>
+				<div>
+					<TitleHeader>
+						Pedidos
+					</TitleHeader>
+					<TextHeader>
+						Acompanhe os pedidos dos Clientes
+					</TextHeader>
+				</div>
 				<img src={Logo} alt="Dois Garçons, um Homem e uma Mulher"/>
-			</Box>
+			</Content>
 		</Container>
 	);
 }
