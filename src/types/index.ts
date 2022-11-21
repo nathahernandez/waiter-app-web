@@ -3,7 +3,7 @@ export interface OrdersType {
 	table: string;
 	status: string;
 	createdAt: string;
-	products: ProductType[];
+	products: ProductsType[];
 	__v: number;
 
 }
