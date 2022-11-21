@@ -15,6 +15,9 @@ export const Content = styled.div`
 	justify-content: space-between;
 	align-items: center;
 `;
+export const LogoImg = styled.img`
+	overflow: hidden;
+`;
 export const TitleHeader = styled.h3`
 	font-size: ${prop => prop.theme.TYPOGRAPH.HEADING.H3.SIZE};
 	font-weight: ${prop => prop.theme.TYPOGRAPH.HEADING.WEIGHT};

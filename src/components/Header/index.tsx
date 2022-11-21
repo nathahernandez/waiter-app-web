@@ -1,5 +1,5 @@
 import Logo from "../../assets/images/logo.svg";
-import { Container, TitleHeader, TextHeader, Content } from "./styles";
+import { Container, TitleHeader, TextHeader, Content, LogoImg } from "./styles";
 
 export default function Header () {
 	return (
@@ -13,7 +13,7 @@ export default function Header () {
 						Acompanhe os pedidos dos Clientes
 					</TextHeader>
 				</div>
-				<img src={Logo} alt="Dois Garçons, um Homem e uma Mulher"/>
+				<LogoImg src={Logo} alt="Dois Garçons, um Homem e uma Mulher"/>
 			</Content>
 		</Container>
 	);
