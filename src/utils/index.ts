@@ -1,4 +1,4 @@
-import { OrdersType } from "../types";
+import { OrdersType, ProductsType } from "../types";
 
 export const iconResolve = (stage : string) => {
 	const resolve = stage === "WAITING" ? "🕒" : stage === "IN_PRODUCTION" ? "👨‍🍳" : "✅";
@@ -19,10 +19,16 @@ export const currencyResolve = (price : number) => {
 			currency: "BRL"
 		}
 	};
-
 	return new Intl.NumberFormat(formatBR.lang, formatBR.options).format(price);
 };
 
+export const totalPriceResolve = ( products  : ProductsType[]) => {
+
+	const totalPrice = products.reduce(( count, { product, quantity } ) => count + ( product.price* quantity ), 0);
+	const totalPriceFormated = currencyResolve(totalPrice);
+
+	return totalPriceFormated;
+};
 
 export const statusResolve = ( orders: OrdersType[] | undefined) => {
 
