@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+	max-width: 100%;
+	margin-right: 32px;
 	border: ${prop => prop.theme.BORDER};
 	border-radius: 16px;
 	display: flex;
@@ -9,12 +11,11 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-	min-width: 384px;
+	min-width: 352px;
 	margin: 16px;
 `;
 
 export const Header = styled.header`
-	width: 100%;
 	display: flex;
 	justify-content: center;
 	gap: 8px;
@@ -27,7 +28,6 @@ export const Stage = styled.strong`
 `;
 
 export const ContainerOrders = styled.section`
-	width: 100%;
 	display: flex;
 	flex-direction: column;
 `;
