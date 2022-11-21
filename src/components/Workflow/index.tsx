@@ -12,7 +12,7 @@ export default function Workflow () {
 
 	useEffect(() => {
 		api.get("/orders").then(res => setOrdersData(res.data));
-	},[ordersData]);
+	},[]);
 
 	const {
 		statusDone,
