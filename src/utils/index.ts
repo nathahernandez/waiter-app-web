@@ -10,6 +10,20 @@ export const stageResolve = (stage : string) => {
 	return resolve;
 };
 
+export const currencyResolve = (price : number) => {
+
+	const formatBR = {
+		lang: "pt-br",
+		options: {
+			style: "currency",
+			currency: "BRL"
+		}
+	};
+
+	return new Intl.NumberFormat(formatBR.lang, formatBR.options).format(price);
+};
+
+
 export const statusResolve = ( orders: OrdersType[] | undefined) => {
 
 	let statusProd : OrdersType[] = [];
