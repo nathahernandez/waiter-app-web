@@ -1,9 +1,9 @@
-import { Container, Stage, ContainerOrders, Content, Header } from "./styles";
-import { iconResolve, stageResolve } from "../../utils";
-import Order from "../Order";
-import { OrdersType } from "../../types";
-import OrderModal from "../OrderModal";
-import { useState } from "react";
+import { Container, Stage, ContainerOrders, Content, Header } from './styles'
+import { iconResolve, stageResolve } from '../../utils'
+import Order from '../Order'
+import { OrdersType } from '../../types'
+import OrderModal from '../OrderModal'
+import { useState } from 'react'
 
 interface WorkstageProps {
 	stage: string;
@@ -12,13 +12,13 @@ interface WorkstageProps {
 
 export default function WorkStage ({ stage, orders }: WorkstageProps) {
 
-	const [ isModalVisible, setIsModalVisible ] = useState(false);
-	const [ selectedOrder, setSelectedOrder ] = useState<OrdersType>();
+	const [ isModalVisible, setIsModalVisible ] = useState(false)
+	const [ selectedOrder, setSelectedOrder ] = useState<OrdersType>()
 
 	const handleOpenOrder = (order : OrdersType) => {
-		setSelectedOrder(order);
-		setIsModalVisible(true);
-	};
+		setSelectedOrder(order)
+		setIsModalVisible(true)
+	}
 
 	return (
 		<Container>
@@ -46,5 +46,5 @@ export default function WorkStage ({ stage, orders }: WorkstageProps) {
 
 			</Content>
 		</Container>
-	);
+	)
 }

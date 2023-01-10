@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.section`
 	width: 100%;
@@ -7,7 +7,7 @@ export const Container = styled.section`
 	justify-content: center;
 	align-items: center;
 
-`;
+`
 
 export const Content = styled.div`
 	max-width: 1216px;
@@ -17,4 +17,4 @@ export const Content = styled.div`
 	@media (max-width: 1024px){
 		flex-direction: column;
 	}
-`;
+`

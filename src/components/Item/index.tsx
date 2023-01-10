@@ -1,6 +1,6 @@
-import {ProductImage, ItemContainer, ProductUnity, ProductName, ProductPrice, ProductContainer} from "./styles";
-import { ProductType } from "../../types";
-import { currencyResolve } from "../../utils";
+import {ProductImage, ItemContainer, ProductUnity, ProductName, ProductPrice, ProductContainer} from './styles'
+import { ProductType } from '../../types'
+import { currencyResolve } from '../../utils'
 
 interface ItemProps {
 	productInfo:{
@@ -12,8 +12,8 @@ interface ItemProps {
 
 export default function Item ({ productInfo } : ItemProps) {
 
-	const { product, quantity } = productInfo;
-	const { name, price, imagePath } = product;
+	const { product, quantity } = productInfo
+	const { name, price, imagePath } = product
 
 	return (
 		<ItemContainer>
@@ -24,5 +24,5 @@ export default function Item ({ productInfo } : ItemProps) {
 				<ProductPrice>{currencyResolve(price)}</ProductPrice>
 			</ProductContainer>
 		</ItemContainer>
-	);
+	)
 }

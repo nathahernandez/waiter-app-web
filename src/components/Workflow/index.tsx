@@ -1,24 +1,24 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react'
 
-import WorkStage from "../WorkStage";
-import { Container, Content } from "./styles";
-import { api } from "../../services/api";
-import { statusResolve } from "../../utils";
-import { OrdersType } from "../../types";
+import WorkStage from '../WorkStage'
+import { Container, Content } from './styles'
+import { api } from '../../services/api'
+import { statusResolve } from '../../utils'
+import { OrdersType } from '../../types'
 
 export default function Workflow () {
 
-	const [ ordersData, setOrdersData ] = useState<OrdersType[]>();
+	const [ ordersData, setOrdersData ] = useState<OrdersType[]>()
 
 	useEffect(() => {
-		api.get("/orders").then(res => setOrdersData(res.data));
-	},[]);
+		api.get('/orders').then(res => setOrdersData(res.data))
+	},[])
 
 	const {
 		statusDone,
 		statusProd,
 		statusWait
-	} = statusResolve(ordersData);
+	} = statusResolve(ordersData)
 
 	return (
 		<Container>
@@ -28,5 +28,5 @@ export default function Workflow () {
 				<WorkStage stage="DONE" orders={statusDone}/>
 			</Content>
 		</Container>
-	);
+	)
 }

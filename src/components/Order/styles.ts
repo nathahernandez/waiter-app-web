@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.button`
 	min-width: 352px;
@@ -20,4 +20,4 @@ export const Container = styled.button`
 		font-size: ${prop => prop.theme.TYPOGRAPH.BODY_TEXT.SM};
 		color: ${prop => prop.theme.COLORS.GRAY._600}
 	}
-`;
+`

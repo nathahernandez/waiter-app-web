@@ -1,8 +1,22 @@
-import { Overlay, ContainerBody, Body, ContainerButtons,ContainerItem, StatusContainer,TitleContainer, TextSM, TextMD, TotalContainer, Button, TitleText, ButtonClose } from "./styles";
-import Close from "../../assets/images/close-icon.svg";
-import Item from "../Item/index";
-import { OrdersType } from "../../types";
-import { totalPriceResolve, iconResolve, stageResolve } from "../../utils/";
+import {
+	Overlay,
+	ContainerBody,
+	Body,
+	ContainerButtons,
+	ContainerItem,
+	StatusContainer,
+	TitleContainer,
+	TextSM, TextMD,
+	TotalContainer,
+	Button,
+	TitleText,
+	ButtonClose
+} from './styles'
+
+import Close from '../../assets/images/close-icon.svg'
+import Item from '../Item/index'
+import { OrdersType } from '../../types'
+import { totalPriceResolve, iconResolve, stageResolve } from '../../utils/'
 
 interface OrderModalProps {
 	visible: boolean;
@@ -13,11 +27,11 @@ interface OrderModalProps {
 export default function OrderModal ({ visible, setVisible, order } : OrderModalProps) {
 
 	if(!visible || !order){
-		return null;
+		return null
 	}
 
-	const { status, products, table } = order;
-	const handleClose = () => setVisible(!visible);
+	const { status, products, table } = order
+	const handleClose = () => setVisible(!visible)
 
 	return (
 		<Overlay>
@@ -66,5 +80,5 @@ export default function OrderModal ({ visible, setVisible, order } : OrderModalP
 				</Body>
 			</ContainerBody>
 		</Overlay>
-	);
+	)
 }
